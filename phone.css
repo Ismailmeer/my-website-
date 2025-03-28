@@ -763,6 +763,33 @@
 
     }
 
+    .per {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        background: linear-gradient(to bottom, rgb(238, 162, 162), #4B206A);
+        color: white;
+        width: 90%;
+        height: auto;
+        text-align: center;
+        padding: 80px 20px;
+        position: relative;
+
+    }
+
+    .accomplish {
+        background: linear-gradient(to bottom, rgb(238, 162, 162), #4B206A);
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 10px;
+        height: 250px;
+
+    }
 
 
     .video {
@@ -931,6 +958,10 @@
 
     }
 
+    .vid {
+        height: 250px;
+        width: auto;
+    }
 
 }
 
@@ -968,6 +999,18 @@
         left: 2%;
         border-radius: 8px;
     }
+
+    .cont-items {
+        font-weight: bold;
+        font-size: 10px;
+        align-items: center;
+        display: flex;
+        padding: 40px 10px;
+        flex-direction: column;
+
+    }
+
+
 
     .video-1 {
         height: 280px;
@@ -1019,4 +1062,199 @@
         margin: 0px 0px;
     }
 
+    .sec-heading {
+
+        font-size: 15px;
+        font-weight: bold;
+
+    }
+}
+
+@media (max-width: 480px) {
+    .divider {
+        width: 95%;
+        height: 1px;
+        background-color: black;
+        margin: 0 50px;
+    }
+
+    .boom {
+        width: 100%;
+    }
+
+    .mainbody {
+        width: 100%;
+    }
+
+    .video-1 {
+        height: 200px;
+        width: auto;
+        position: absolute;
+        top: 50%;
+        left: 70%;
+        opacity: 0;
+        visibility: hidden;
+        transform: translate(-65%, -50%);
+        border-radius: 15px;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .video-show {
+        height: 200px;
+        width: auto;
+        top: 50%;
+        left: 60%;
+        opacity: 1;
+        transform: translate(-65%, -50%);
+        visibility: visible;
+        border-radius: 5px;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .per {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        background: linear-gradient(to bottom, rgb(238, 162, 162), #4B206A);
+        color: white;
+        width: 90%;
+        height: auto;
+        text-align: center;
+        padding: 80px 20px;
+        position: relative;
+
+    }
+
+    .accomplish {
+        background: linear-gradient(to bottom, rgb(238, 162, 162), #4B206A);
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 10px;
+        height: 250px;
+
+    }
+
+    .vid {
+        height: 200px;
+        width: auto;
+    }
+
+
+}
+
+@media (max-width: 445px) {
+    .dropdown {
+        /* position: absolute; */
+        flex-wrap: wrap;
+        font-size: 7px;
+        left: 12%;
+        flex: 0 0 calc(40% - 20px);
+        max-width: calc(80% - 20px);
+
+        height: auto;
+        width: 98%;
+        opacity: 0;
+        z-index: 5;
+        top: 1.2em;
+        pointer-events: none;
+        transition: all .4s ease-in-out;
+        box-shadow: 0 0px 20px rgba(0, 0, 0, 0.1);
+        padding: 10px 0px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .active {
+
+        pointer-events: auto;
+        display: flex;
+        opacity: 1;
+        background-color: #fff;
+        top: 30%;
+        left: 12%;
+        border-radius: 8px;
+    }
+
+    .badges {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 420px) {
+    .main-heading {
+        font-size: 15px;
+        font-weight: bold;
+
+    }
+
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 40px;
+    }
+
+}
+
+@media (max-width: 395px) {
+
+    .region {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .region label {
+        margin: 5px;
+        display: flex;
+
+    }
+
+    .start {
+        border-radius: 5px;
+        background-color: #611f69;
+        color: white;
+        border: 1px solid white;
+        transition: all .4s ease-in-out;
+    }
+
+
+
+
+    .per {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        background: linear-gradient(to bottom, rgb(238, 162, 162), #4B206A);
+        color: white;
+        width: 88%;
+        height: auto;
+        text-align: center;
+        padding: 80px 20px;
+        position: relative;
+
+    }
+
+    .vid {
+        height: 180px;
+        width: auto;
+    }
+
+}
+
+
+@media (max-width: 352px) {
+    .main-heading {
+        font-size: 13px;
+        font-weight: bold;
+    }
 }
